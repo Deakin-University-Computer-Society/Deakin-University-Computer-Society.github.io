@@ -94,11 +94,8 @@ function NavAbout() {
                     <LinkItem to="/about" title="About Us">
                         What we do as a DUSA club
                     </LinkItem>
-                    <LinkItem to="/docs" title="Join!">
+                    <LinkItem to="/join" title="Join!">
                         Join the DU Computer Society
-                    </LinkItem>
-                    <LinkItem to="/" title="Filler">
-                        Fill this in AHHHHHH!!!!
                     </LinkItem>
                     <p className="text-xs text-secondary col-span-2">Thank you to all our members!</p>
                 </div>
