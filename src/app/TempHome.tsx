@@ -153,7 +153,7 @@ function Positions() {
 
 				<div>
 					<h3 className="font-bold text-xl">Treasurer</h3>
-					<p>Sam Chalmers</p>
+					<p>Sam Stajnko</p>
 				</div>
 
 				<div>
