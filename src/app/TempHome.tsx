@@ -2,10 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ExternalLink } from "lucide-react";
 import Logo from "@/assets/logo.png";
+import { ModeToggle } from "@/components/theme/theme-toggle";
 
 export function TempHome() {
 	return (
-		<div className="w-[80ch] mx-auto my-12 py-  4 px-6 box-content flex flex-col gap-16">
+		<div className="w-[80ch] mx-auto my-12 py-4 px-6 box-content flex flex-col gap-16">
+			<ModeToggle />
 			<header className="flex flex-col gap-8">
 				<img src={Logo} alt="DUCS Logo" className="w-40 mx-auto" />
 
@@ -110,7 +112,7 @@ function Contact() {
 		<div className="flex flex-col gap-4">
 			<h2 className="text-2xl font-bold">Contact Us</h2>
 			<p>
-				DUCS currently doesnt have direct contacts, for each possition
+				DUCS currently doesn't have direct contacts, for each position
 				but you can email us at the email below and one of us will get
 				back to you within 7 business days.
 			</p>
