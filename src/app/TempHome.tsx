@@ -6,33 +6,36 @@ import { ModeToggle } from "@/components/theme/theme-toggle";
 
 export function TempHome() {
 	return (
-		<div className="w-full max-w-[80ch] mx-auto my-12 py-4 px-6 box-content flex flex-col gap-16">
-			<ModeToggle />
-			<header className="flex flex-col gap-8">
-				<img src={Logo} alt="DUCS Logo" className="w-40 mx-auto" />
+		<div className="w-full mx-auto my-12">
+			<div className="max-w-[80ch] px-6 box-content mx-auto gap-16 flex flex-col">
+				<ModeToggle />
 
-				<h1 className="text-3xl font-bold text-center">
-					Deakin University Computer Society
-				</h1>
-			</header>
+				<header className="flex flex-col gap-8 ">
+					<img src={Logo} alt="DUCS Logo" className="w-40 mx-auto" />
 
-			<div className="flex flex-col gap-10">
-				<About />
-				<Separator />
+					<h1 className="text-3xl font-bold text-center">
+						Deakin University Computer Society
+					</h1>
+				</header>
 
-				<Join />
-				<Separator />
+				<div className="flex flex-col gap-10">
+					<About />
+					<Separator />
 
-				<Contact />
-				<Separator />
+					<Join />
+					<Separator />
 
-				<Sponsors />
-				<Separator />
+					<Contact />
+					<Separator />
 
-				<Positions />
-				<Separator />
+					<Sponsors />
+					<Separator />
 
-				<Footer />
+					<Positions />
+					<Separator />
+
+					<Footer />
+				</div>
 			</div>
 		</div>
 	);
@@ -119,9 +122,7 @@ function Contact() {
 
 			<div className="gap-2 flex flex-col">
 				<h3 className="font-bold text-xl">Email: </h3>
-				<a href="mailto:deakincomputersociety@gmail.com">
-					deakincomputersociety@gmail.com
-				</a>
+				<EmailLink />
 			</div>
 		</div>
 	);
@@ -145,7 +146,7 @@ function Positions() {
 		<div className="flex flex-col gap-4">
 			<h2 className="text-2xl font-bold">Positions</h2>
 
-			<div className="flex gap-14">
+			<div className="flex gap-14 flex-wrap">
 				<div>
 					<h3 className="font-bold text-xl">Presedent</h3>
 					<p>Oliver Quail</p>
@@ -172,6 +173,17 @@ function Footer() {
 		<footer className="flex flex-col gap-4">
 			<p>© {currentYear} Deakin University Computer Society</p>
 		</footer>
+	);
+}
+
+function EmailLink() {
+	return (
+		<a
+			href="mailto:deakincomputersociety@gmail.com"
+			className="hover:underline"
+		>
+			deakincomputersociety@gmail.com
+		</a>
 	);
 }
 
