@@ -1,8 +1,8 @@
 import { Separator } from "@/components/ui/separator";
 import { ModeToggle } from "@/components/theme/theme-toggle";
-import { About } from "./SiteForLater/about";
+import { About } from "./TempHomeContent/About";
 import { Sponsors } from "./TempHomeContent/Sponsors";
-import { Join } from "./SiteForLater/join";
+import { Join } from "./TempHomeContent/Join";
 import { Contact } from "./TempHomeContent/Contact";
 import { Positions } from "./TempHomeContent/Positions";
 import { Footer } from "./TempHomeContent/Footer";
