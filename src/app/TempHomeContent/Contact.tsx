@@ -15,9 +15,9 @@ export function Contact() {
 		<div className="flex flex-col gap-4">
 			<h2 className="text-2xl font-bold">Contact Us</h2>
 			<p>
-				DUCS currently doesn't have direct contacts, for each position
-				but you can email us at the email below and one of us will get
-				back to you within 7 business days.
+				For any general enquiries, please contact us our gmail below. If
+				you have any specific enquiries, please contact the position
+				holder directly by finding the correct email in "more".
 			</p>
 
 			<div className="gap-4 flex flex-col border-l-[3px] pl-4 border-border mt-2">
