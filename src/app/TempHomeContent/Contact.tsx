@@ -20,7 +20,7 @@ export function Contact() {
 				back to you within 7 business days.
 			</p>
 
-			<div className="gap-4 flex flex-col border-l-[3px] pl-4 border-border">
+			<div className="gap-4 flex flex-col border-l-[3px] pl-4 border-border mt-2">
 				<div className="grid">
 					<p className="font-bold">General:</p>
 					<EmailLink />
@@ -55,12 +55,14 @@ export function Contact() {
 											"president",
 											"treasurer",
 											"secretary",
-										].map((type) => (
+										].map((type, index) => (
 											<motion.li
 												initial={{ opacity: 0, x: -20 }}
 												animate={{ opacity: 1, x: 0 }}
 												exit={{ opacity: 0, x: -20 }}
-												transition={{ delay: 0.1 }}
+												transition={{
+													delay: 0.1 * index + 0.1,
+												}}
 											>
 												<EmailLink
 													type={

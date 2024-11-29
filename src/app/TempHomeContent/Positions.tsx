@@ -3,11 +3,11 @@ import { EmailLink } from "./EmailLink";
 export function Positions() {
 	return (
 		<div className="flex flex-col gap-4">
-			<h2 className="text-2xl font-bold">Positions</h2>
+			<h2 className="text-2xl font-bold">Executive Positions</h2>
 
 			<div className="flex gap-14 flex-wrap">
 				<div>
-					<h3 className="font-bold text-xl">Presedent</h3>
+					<h3 className="font-bold text-xl">President</h3>
 					<p>Oliver Quail</p>
 					<EmailLink type="president" />
 				</div>

@@ -21,10 +21,11 @@ export function Join() {
 						href="https://www.dusa.org.au/clubs/computer-society"
 						target="_blank"
 						rel="noreferrer"
+						className="mt-2"
 					>
-						<Button variant="outline" className="flex gap-2">
-							<span>Join with DUSA</span>
-							<ExternalLink />
+						<Button variant="outline" className="flex gap-2 w-40">
+							<span className="my-auto">Join with DUSA</span>
+							<ExternalLink className="w-4 h-4 my-auto" />
 						</Button>
 					</a>
 				</div>
@@ -45,9 +46,9 @@ export function Join() {
 						rel="noreferrer"
 						className="mt-2"
 					>
-						<Button variant="outline" className="flex gap-2">
-							<span>Discord Invite</span>
-							<ExternalLink />
+						<Button variant="outline" className="flex gap-2 w-40">
+							<span className="my-auto">Discord Invite</span>
+							<ExternalLink className="w-4 h-4 my-auto" />
 						</Button>
 					</a>
 				</div>
