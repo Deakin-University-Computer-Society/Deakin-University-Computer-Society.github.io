@@ -51,30 +51,27 @@ export function Contact() {
 							>
 								<CollapsibleContent>
 									<ul className="list-disc list-inside flex flex-col gap-2 my-1">
-										<motion.li
-											initial={{ opacity: 0, x: -20 }}
-											animate={{ opacity: 1, x: 0 }}
-											exit={{ opacity: 0, x: -20 }}
-											transition={{ delay: 0.1 }}
-										>
-											<EmailLink type="president" />
-										</motion.li>
-										<motion.li
-											initial={{ opacity: 0, x: -20 }}
-											animate={{ opacity: 1, x: 0 }}
-											exit={{ opacity: 0, x: -20 }}
-											transition={{ delay: 0.2 }}
-										>
-											<EmailLink type="treasurer" />
-										</motion.li>
-										<motion.li
-											initial={{ opacity: 0, x: -20 }}
-											animate={{ opacity: 1, x: 0 }}
-											exit={{ opacity: 0, x: -20 }}
-											transition={{ delay: 0.3 }}
-										>
-											<EmailLink type="secretary" />
-										</motion.li>
+										{[
+											"president",
+											"treasurer",
+											"secretary",
+										].map((type) => (
+											<motion.li
+												initial={{ opacity: 0, x: -20 }}
+												animate={{ opacity: 1, x: 0 }}
+												exit={{ opacity: 0, x: -20 }}
+												transition={{ delay: 0.1 }}
+											>
+												<EmailLink
+													type={
+														type as
+															| "president"
+															| "treasurer"
+															| "secretary"
+													}
+												/>
+											</motion.li>
+										))}
 									</ul>
 								</CollapsibleContent>
 							</motion.div>
