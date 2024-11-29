@@ -20,11 +20,11 @@ export function Contact() {
 				back to you within 7 business days.
 			</p>
 
-			<div className="gap-2 flex flex-col">
-				<h3 className="font-bold text-xl">Email: </h3>
-				<p>
+			<div className="gap-4 flex flex-col border-l-[3px] pl-4 border-border">
+				<div className="grid">
+					<p className="font-bold">General:</p>
 					<EmailLink />
-				</p>
+				</div>
 				<Collapsible open={isOpen} onOpenChange={setIsOpen}>
 					<CollapsibleTrigger className="flex gap-2 items-center font-bold">
 						More
