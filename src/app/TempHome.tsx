@@ -11,7 +11,7 @@ import { Header } from "./TempHomeContent/Header";
 export function TempHome() {
 	return (
 		<div className="w-full mx-auto my-12">
-			<div className="max-w-[80ch] px-6 box-content mx-auto gap-16 flex flex-col">
+			<div className="max-w-[70ch] px-6 box-content mx-auto gap-16 flex flex-col text-justify">
 				<ModeToggle />
 
 				<Header />
