@@ -11,7 +11,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export function PageRoutes() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter
+			future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
+		>
 			{/* <NavBar /> */}
 			<Routes>
 				{/* The 404 page is the default page is a page isnt found */}

@@ -1,6 +1,6 @@
 {
-	"name": "",
-	"short_name": "",
+	"name": "Deakin University Computer Society",
+	"short_name": "DUCS",
 	"icons": [
 		{
 			"src": "/android-chrome-192x192.png",
@@ -13,7 +13,8 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#ffffff",
-	"background_color": "#ffffff",
+	"start_url": ".",
+	"theme_color": "#ea580c",
+	"background_color": "#121212",
 	"display": "standalone"
 }
