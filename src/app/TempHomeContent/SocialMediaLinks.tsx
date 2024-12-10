@@ -5,6 +5,7 @@ import {
 	Facebook,
 	Instagram,
 	LinkedIn,
+	Threads,
 } from "@/assets/svgl-icons";
 
 export function SocaialMediaLinks() {
@@ -44,6 +45,13 @@ export function SocaialMediaLinks() {
 				href="https://bsky.app/profile/ducs.club"
 			>
 				<Bluesky className="w-6 h-6" />
+			</a>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href="https://www.threads.net/@deakincomputersociety"
+			>
+				<Threads className="w-6 h-6" />
 			</a>
 			<a
 				target="_blank"
