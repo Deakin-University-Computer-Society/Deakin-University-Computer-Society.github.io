@@ -6,8 +6,7 @@ const DUSA = (props: SVGProps<SVGSVGElement>) => (
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 85 37"
 			fill="white"
-			className="m-auto"
-			width="100%"
+			width="1em"
 			{...props}
 		>
 			<path
