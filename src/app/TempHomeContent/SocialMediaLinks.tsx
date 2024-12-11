@@ -40,7 +40,7 @@ export function SocaialMediaLinks() {
 			>
 				<LinkedIn className="w-6 h-6" />
 			</a>
-			<NewNotification className="w-6 h-6">
+			<NewNotification className="w-6 h-6" width={4}>
 				<a
 					target="_blank"
 					rel="noreferrer"
@@ -50,7 +50,7 @@ export function SocaialMediaLinks() {
 				</a>
 			</NewNotification>
 
-			<NewNotification className="w-6 h-6">
+			<NewNotification className="w-6 h-6" width={4}>
 				<a
 					target="_blank"
 					rel="noreferrer"
