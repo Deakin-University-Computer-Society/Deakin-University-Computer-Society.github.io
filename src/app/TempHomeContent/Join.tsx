@@ -32,7 +32,7 @@ export function Join() {
 
 				<div className="flex flex-col gap-2">
 					<h2 className="text-xl font-bold">
-						Join our Discord Server (FREE)
+						Join our Discord Server
 					</h2>
 					<p>
 						Get to know like minded students, learn about what DUCS
