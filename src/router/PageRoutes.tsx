@@ -1,3 +1,4 @@
+import { QuickLinksPage } from "@/app/TempHomeContent/quickLinks/QuickLinksPage";
 import { TempHome } from "@/app/TempHome";
 // import { NavBar } from "@/components/custom/nav_bar";
 import { Error404, ErrorRouteHandler } from "@/error/error_pages";
@@ -11,7 +12,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export function PageRoutes() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter
+			future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
+		>
 			{/* <NavBar /> */}
 			<Routes>
 				{/* The 404 page is the default page is a page isnt found */}
@@ -28,6 +31,7 @@ export function PageRoutes() {
                 <Route path="/join" element={<Join />}></Route> */}
 
 				<Route path="/" element={<TempHome />}></Route>
+				<Route path="/links" element={<QuickLinksPage />}></Route>
 			</Routes>
 		</BrowserRouter>
 	);

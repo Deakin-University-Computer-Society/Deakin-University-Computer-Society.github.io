@@ -5,7 +5,9 @@ import {
 	Facebook,
 	Instagram,
 	LinkedIn,
+	Threads,
 } from "@/assets/svgl-icons";
+import { NewNotification } from "@/components/custom/newNotification";
 
 export function SocaialMediaLinks() {
 	return (
@@ -38,19 +40,31 @@ export function SocaialMediaLinks() {
 			>
 				<LinkedIn className="w-6 h-6" />
 			</a>
-			<a
-				target="_blank"
-				rel="noreferrer"
-				href="https://bsky.app/profile/ducs.club"
-			>
-				<Bluesky className="w-6 h-6" />
-			</a>
+			<NewNotification className="w-6 h-6" width={4}>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					href="https://bsky.app/profile/ducs.club"
+				>
+					<Bluesky className="w-6 h-6" />
+				</a>
+			</NewNotification>
+
+			<NewNotification className="w-6 h-6" width={4}>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					href="https://www.threads.net/@deakincomputersociety"
+				>
+					<Threads className="w-6 h-6" />
+				</a>
+			</NewNotification>
 			<a
 				target="_blank"
 				rel="noreferrer"
 				href="https://www.dusa.org.au/clubs/computer-society"
 			>
-				<DUSA />
+				<DUSA className="w-6 h-6" />
 			</a>
 		</div>
 	);

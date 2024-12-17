@@ -47,7 +47,6 @@ export function Contact() {
 									duration: 0.3,
 									ease: "easeInOut",
 								}}
-								className="overflow-hidden"
 							>
 								<CollapsibleContent>
 									<ul className="list-disc list-inside flex flex-col gap-2 my-1">
@@ -57,6 +56,7 @@ export function Contact() {
 											"secretary",
 										].map((type, index) => (
 											<motion.li
+												key={index}
 												initial={{ opacity: 0, x: -20 }}
 												animate={{ opacity: 1, x: 0 }}
 												exit={{ opacity: 0, x: -20 }}
