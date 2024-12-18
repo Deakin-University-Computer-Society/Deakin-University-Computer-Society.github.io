@@ -9,10 +9,10 @@ import {
 	Threads,
 } from "@/assets/svgl-icons";
 import { cn } from "@/lib/utils";
-import { LinksHeader } from "./LinksHeader";
 import { Footer } from "../Footer";
 import { Separator } from "@radix-ui/react-separator";
 import { NewNotification } from "@/components/custom/newNotification";
+import { QuickHeader } from "../QuickHeader";
 
 const icon_size = cn("w-8 h-8 my-auto");
 
@@ -69,7 +69,7 @@ const links: {
 export function QuickLinksPage() {
 	return (
 		<div className="flex flex-col my-12">
-			<LinksHeader />
+			<QuickHeader title="DUCS Quick Links" />
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto my-16">
 				{links.map((l, i) => {
 					return (
