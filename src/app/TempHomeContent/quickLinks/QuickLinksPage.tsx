@@ -3,6 +3,7 @@ import {
 	Bluesky,
 	Discord,
 	Facebook,
+	Github,
 	Instagram,
 	LinkedIn,
 	Threads,
@@ -40,6 +41,11 @@ const links: {
 		name: "LinkedIn",
 		link: "https://au.linkedin.com/company/deakincomputersociety",
 		icon: <LinkedIn className={icon_size} />,
+	},
+	{
+		name: "Github Organisation",
+		link: "https://github.com/Deakin-University-Computer-Society",
+		icon: <Github className={icon_size} />,
 	},
 	{
 		name: "Bluesky",
